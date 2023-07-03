@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CUSTOM PROPERTIES */
+
+:root {
+    --primary: #4EE1A0;
+    --secondary: blue;
+    --tertiary: yellow;
+    --neutral-1: white;
+    --neutral-2: #979797;
+    --neutral-3: #242424;
+    --neutral-4: black;
+
+    --margin-mobile: 1rem;
+    --margin-tablet: 2rem;
+    --margin-desktop: 4rem;
+    --max-width-body: 1110px;
+
+    --header-height: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:focus {
+  box-shadow: 0 0 0 100px var(--neutral-3) inset;
+  -webkit-text-fill-color: var(--neutral-1);
+}
+
+@layer utilities {
+    .LinkStyle1 {
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .HoverStyle1 {
+      transform: scale(1.1);
+      transition-duration: 500;
+      color: var(--primary);
+    }
+    
+    .FlexCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ExtendBackground {
+        box-shadow: 0 0 0 100vmax var(--neutral-3);
+        clip-path: inset(0 -100vmax);
+    }
+
+    .FixedToAutoMargin {
+        width: min(var(--max-width-body), 100% - calc(var(--margin-desktop) * 2));
+        margin: auto;
+    }
+}    
+
+
+

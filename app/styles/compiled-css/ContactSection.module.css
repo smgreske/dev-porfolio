@@ -1,0 +1,49 @@
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-1);
+  padding-block: 1rem;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.input + .input + .input {
+  border: none;
+  margin-bottom: 5rem;
+}
+
+.submitButton {
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: end;
+  background-color: transparent;
+  display: inline-block;
+  letter-spacing: 0.15rem;
+  border: none;
+  padding-bottom: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--color-2);
+}
+
+.submitButton:hover {
+  color: var(--color-2);
+}
+
+.rings {
+  position: absolute;
+  width: 600px;
+  translate: -65%;
+  bottom: 50px;
+}
+@media (min-width: 650px) {
+  .rings {
+    translate: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  .rings {
+    translate: -50%;
+  }
+}/*# sourceMappingURL=ContactSection.module.css.map */

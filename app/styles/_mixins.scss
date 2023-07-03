@@ -1,0 +1,23 @@
+@import './sassVariables.scss';
+
+@mixin tablet {
+    @media (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin linkStyle1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary);
+}
+
+@mixin hoverEffect1 {
+    color: var(--primary);
+    scale: 1.1;
+    transition: scale .1s linear;
+}
